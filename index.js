@@ -8,7 +8,7 @@ const ObjectID = require('mongodb').ObjectID;
 const bodyParser = require('body-parser')
 require('dotenv').config();
 
-const port = 4000;
+const port = process.env.PORT ||4000;
 app.use(cors());
 
 app.use(bodyParser.json());
